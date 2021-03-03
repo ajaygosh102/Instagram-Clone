@@ -1,4 +1,4 @@
-# instagram_clone
+# instagram_clone MVVM
 
 A new Flutter application.
 
