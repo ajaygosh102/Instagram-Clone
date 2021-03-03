@@ -14,5 +14,5 @@ abstract class ThirdPartyServicesModule {
   @lazySingleton
   SnackbarService get snackBarService;
   @lazySingleton
-  UploadDataService get uploadDataService;
+  HomeDataService get homeDataService;
 }

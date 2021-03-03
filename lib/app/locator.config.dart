@@ -20,12 +20,12 @@ _i1.GetIt $initGetIt(_i1.GetIt get,
   final thirdPartyServicesModule = _$ThirdPartyServicesModule();
   gh.lazySingleton<_i3.DialogService>(
       () => thirdPartyServicesModule.dialogService);
+  gh.lazySingleton<_i4.HomeDataService>(
+      () => thirdPartyServicesModule.homeDataService);
   gh.lazySingleton<_i3.NavigationService>(
       () => thirdPartyServicesModule.navigationService);
   gh.lazySingleton<_i3.SnackbarService>(
       () => thirdPartyServicesModule.snackBarService);
-  gh.lazySingleton<_i4.UploadDataService>(
-      () => thirdPartyServicesModule.uploadDataService);
   return get;
 }
 
@@ -33,9 +33,9 @@ class _$ThirdPartyServicesModule extends _i5.ThirdPartyServicesModule {
   @override
   _i3.DialogService get dialogService => _i3.DialogService();
   @override
+  _i4.HomeDataService get homeDataService => _i4.HomeDataService();
+  @override
   _i3.NavigationService get navigationService => _i3.NavigationService();
   @override
   _i3.SnackbarService get snackBarService => _i3.SnackbarService();
-  @override
-  _i4.UploadDataService get uploadDataService => _i4.UploadDataService();
 }

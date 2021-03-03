@@ -41,7 +41,7 @@ class AppTextStyles {
   }
 
   static TextStyle splashTextStyle() => AppTextStyles.textStyle(
-      size: 70.0.f,
+      size: 60.0.f,
       color: Palette.primaryTextColor,
       fontType: FontType.BOLD,
       fontFamily: 'GrandHotel');

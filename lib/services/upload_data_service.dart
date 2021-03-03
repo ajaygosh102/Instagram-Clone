@@ -1,17 +1,14 @@
 import 'package:dio/dio.dart';
-import 'package:instagram_clone/models/global_data.dart';
+import 'package:instagram_clone/app/server_addresses.dart';
 
-
-class UploadDataService {
+class HomeDataService {
   Dio dio = new Dio();
 
-  Future generateProfile() async {
+  Future getHomeData() async {
     try {
-      print(GlobalData.generateLinkModel.toMap());
-      var response = await dio.post("http://34.65.224.147/GenerateLink",
-          data: GlobalData.generateLinkModel.toMap());
+      var response = await dio.get(ServerAddresses.homeDataList);
       print(response);
-        return response;
+      return response;
     } catch (e) {
       return e.message;
     }
