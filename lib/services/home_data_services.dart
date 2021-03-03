@@ -7,7 +7,15 @@ class HomeDataService {
   Future getHomeData() async {
     try {
       var response = await dio.get(ServerAddresses.homeDataList);
-      print(response);
+      return response;
+    } catch (e) {
+      return e.message;
+    }
+  }
+
+  Future getComments() async {
+    try {
+      var response = await dio.get(ServerAddresses.comments);
       return response;
     } catch (e) {
       return e.message;

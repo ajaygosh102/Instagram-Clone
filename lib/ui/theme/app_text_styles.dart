@@ -60,7 +60,7 @@ class AppTextStyles {
 
   static TextStyle secondaryTextStyle2() => AppTextStyles.textStyle(
         size: 12.0.f,
-        color: Palette.secondaryTextColor,
+        color: Palette.primaryTextColor,
         fontType: FontType.REGULAR,
       );
 

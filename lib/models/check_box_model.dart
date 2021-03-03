@@ -1,1 +1,0 @@
-class CheckBoxModel {  CheckBoxModel({    this.title,    this.isChecked = false,  });  String title;  bool isChecked;}

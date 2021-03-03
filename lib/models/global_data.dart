@@ -1,1 +1,1 @@
-import 'package:instagram_clone/models/gnerate_link_model.dart';class GlobalData {  static GenerateLinkModel generateLinkModel = GenerateLinkModel();  static List<Product> productsList = [];}
+import 'package:instagram_clone/models/comment_data_model.dart';import 'package:instagram_clone/models/home_data_model.dart';class GlobalData {  static List<HomeDataModel> homeDataModel=[];  static List<CommentDataModel> commentDataModel;}
