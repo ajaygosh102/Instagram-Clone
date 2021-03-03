@@ -9,14 +9,17 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
+import '../ui/views/dash_board/dash_board_view.dart';
 import '../ui/views/home/home_view.dart';
 import '../ui/views/startup/start_up_view.dart';
 
 class Routes {
   static const String startUpView = '/';
+  static const String dashBoard = '/dash-board';
   static const String homeView = '/home-view';
   static const all = <String>{
     startUpView,
+    dashBoard,
     homeView,
   };
 }
@@ -26,6 +29,7 @@ class Router extends RouterBase {
   List<RouteDef> get routes => _routes;
   final _routes = <RouteDef>[
     RouteDef(Routes.startUpView, page: StartUpView),
+    RouteDef(Routes.dashBoard, page: DashBoard),
     RouteDef(Routes.homeView, page: HomeView),
   ];
   @override
@@ -34,6 +38,12 @@ class Router extends RouterBase {
     StartUpView: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => StartUpView(),
+        settings: data,
+      );
+    },
+    DashBoard: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => DashBoard(),
         settings: data,
       );
     },
@@ -52,6 +62,8 @@ class Router extends RouterBase {
 
 extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
   Future<dynamic> pushStartUpView() => push<dynamic>(Routes.startUpView);
+
+  Future<dynamic> pushDashBoard() => push<dynamic>(Routes.dashBoard);
 
   Future<dynamic> pushHomeView() => push<dynamic>(Routes.homeView);
 }
