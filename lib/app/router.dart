@@ -1,0 +1,1 @@
+import 'package:auto_route/auto_route_annotations.dart';import 'package:instagram_clone/ui/views/home/home_view.dart';import 'package:instagram_clone/ui/views/startup/start_up_view.dart';@MaterialAutoRouter(generateNavigationHelperExtension: true, routes: [  MaterialRoute(page: StartUpView,initial: true),  MaterialRoute(page: HomeView),])class $Router {}

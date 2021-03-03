@@ -1,0 +1,1 @@
+import 'package:instagram_clone/models/gnerate_link_model.dart';class GlobalData {  static GenerateLinkModel generateLinkModel = GenerateLinkModel();  static List<Product> productsList = [];}
