@@ -40,7 +40,7 @@ dependencies:
   # Responsive
   flutter_screenutil: ^3.1.1
   # http client
-  dio: ^3.0.10
+  dio: ^5.0.3
   image_stack: ^1.1.0
   readmore: ^1.0.1
   #  local db
